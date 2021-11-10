@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+:root {
+    --color-white: #fbfcfc;
+    --color-blue: #A8D5D6;
+    --color-blue-alpha: rgba(168, 213, 214, 0.4);
+    --color-orange: rgb(224, 149, 56);
+    --color-darkblue: rgba(15, 75, 75, 0.685);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--color-white);
+    margin: 0;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%; 
+    width: 100%; 
+    z-index: -1;
+    background: var(--color-blue) no-repeat center;
+    background-image: linear-gradient(45deg,rgba(255, 169, 65, 0.7),rgba(51, 204, 204, 0.4)), url(img/code-img.JPG);
+    background-size: cover; 
+}
+
+h1 { line-height: 1;}
+
+p { font-size: 1.2rem; }
+
+h1, p {
+    margin: 10px 0 10px 0;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+}
+
+input, select, textarea, button {
+    margin: 0;
+    font-family: inherit;
+    font-size: 0.9rem;
+    line-height: inherit;
+}
+
+button {
+    border: none;
+}
+
+.container {
+    width: 100%;
+    margin: 50px auto;
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        max-width: 550px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        max-width: 850px;
+    }
+}
+
+.header {
+    padding: 0 10px;
+    margin-bottom: 30px;
+}
+
+.description {
+    font-style: italic;
+    font-weight: 300;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.choice {
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+form {
+    background: var(--color-darkblue);
+    padding: 50px 20px;
+    border-radius: 5px;
+    max-width: 85%;
+    background-position: center;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 520px) {
+    form {
+        padding: 50px;
+    }
+}
+
+.form-part {
+    margin: 0 auto 10px auto;
+    padding: 5px 5px;
+}
+
+.check {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 6px 10px;
+    color: #333;
+    background-color: var(--color-white);
+    background-clip: padding-box;
+    border: 1px solid var(--color-white);
+    border-radius: 5px;
+}
+
+.input-radio, .input-checkbox {
+    display: inline-block;
+    margin-right: 10px;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+.check-size {
+    font-size: 1.1rem; 
+}
+
+@media screen and (max-width: 900px) {
+    .check-size {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .check-size {
+        font-size: 1rem;
+    }
+}
+
+.input-textarea {
+    width: 100%;
+    min-height: 130px;
+    border-radius: 5px;
+    padding: 10px;
+    resize: vertical;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px; 
+    background: var(--color-orange);
+    color: inherit;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
