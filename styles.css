@@ -31,7 +31,7 @@ body::before {
     width: 100%; 
     z-index: -1;
     background: var(--color-blue) no-repeat center;
-    background-image: linear-gradient(45deg,rgba(255, 169, 65, 0.7),rgba(51, 204, 204, 0.4)), url(img/code-img.JPG);
+    background-image: linear-gradient(45deg,rgba(255, 169, 65, 0.7),rgba(51, 204, 204, 0.4)), url(img/pexels-markus-spiske-113850.jpg); /* Photo by Markus Spiske from Pexels */
     background-size: cover; 
 }
 
